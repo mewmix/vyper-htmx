@@ -36,6 +36,8 @@ The weird intrinsic: the contract is the hypermedia controller.
 
 - `VyperHTMXView.vy`: reusable interface target for Vyper `v0.5.0a2`.
 - `ExampleHTMXView.vy`: minimal app contract with `home`, `pool`, `claim`, and `risk` views.
+- `DynamicHTMXView.vy`: stateful contract demonstrating HTMX auto-refresh polling (`hx-trigger="every 2s"`) of on-chain state mutations.
+- `MainnetExplorer.vy`: advanced DeFi dashboard that fetches real-time Chainlink, Uniswap V2, and Aave V3 data via `staticcall` when deployed to a mainnet fork.
 - `gateway.py`: stdlib HTTP gateway that ABI-encodes `render(path, caller, data)`, performs `eth_call`, decodes the returned string, and serves it as HTML.
 - `mock_rpc.py`: local JSON-RPC mock for browser testing without deploying a chain.
 - `test_gateway.py`: ABI, Keccak selector, and data parsing tests.
